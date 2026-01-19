@@ -86,24 +86,6 @@ Each payload includes a timestamp (ms since boot).
 
 ---
 
-## Sound Processing
-
-- 22,050 Hz sampling rate  
-- DC offset removal  
-- RMS calculation over 1 second  
-- SPL estimation using calibrated reference  
-
----
-
-## Low-Power Behavior
-
-- Enters low-power mode after 10s without BLE connection  
-- Suspends all sensor tasks  
-- Reduces CPU frequency  
-- Stops SCD40 periodic measurements  
-- Automatically resumes when a client reconnects  
-
----
 
 ## Build & Flash
 
@@ -115,11 +97,6 @@ Each payload includes a timestamp (ms since boot).
   - Adafruit BME680
   - ScioSense ENS160
   - ESP32 BLE Arduino
-
-### Flash
-
-- Board: `ESP32S3 Dev Module`  
-- Upload speed: `921600`  
 
 ---
 
